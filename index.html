@@ -1,66 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Explora&family=Gloria+Hallelujah&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css " />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <title>Oficina do Luis</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div>
-                <a ><img src="assets/logo.oficina.png" alt="Logo em forma arredondada com um carro no centro e acima dele escrito em destaque Ofina do Luis"></a>
-            </div>
+  </head>
+  <body>
+    <header class="d-flex flex-wrap justify-content-between align-items-center">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img
+              class="w-75"
+              src="assets/logo.oficina.png"
+              alt="Logo em forma arredondada com um carro no centro e acima dele escrito em destaque Ofina do Luis"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            data-bs-theme="dark"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contato">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-            <div>
-                <li>Sobre</li>
-                <li>Serviços</li>
-                <li><a href="#contato">Contato</a></li>
-            </div>            
-        </nav>
-    </header>    
-    
     <main>
-        <div>
-            <img src="assets/escapamento.png">
-        </div>   
-
-        
-
+      <div>
+        <img class="col-md-12" src="assets/escapamento.png" />
+      </div>
     </main>
-    <footer>
-        <div>
-            <h4 id="contato">CONTATO</h4>
-            <p>Whatsapp</p>
-    
-            <h4 >HORÁRIOS</h4>
-            <p>De seg. a sex. das 08h00 às 17h30</p>
-    
-            <h4 >LOCALIZAÇÃO</h4>
-            <p>R. Monsenhor Jerônimo Rodrigues, n° 59 - Jardim Climax, São Paulo - SP, 04177-440</p>
-            <iframe src="https://www.google.com/maps/place/Oficina+do+Luis/@-23.6417778,-46.6754136,12z/data=!4m10!1m2!2m1!1soficina+do+luis!3m6!1s0x94ce5b459e320ff5:0x6716ced1b7f61669!8m2!3d-23.6417778!4d-46.6053758!15sCg9vZmljaW5hIGRvIGx1aXOSARBhdXRvX3JlcGFpcl9zaG9w4AEA!16s%2Fg%2F11sm__k0cv?entry=ttu" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
 
-        <div>
-            <h4>MÍDIAS SOCIAIS</h4>
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top"
+    >
+      <ul class="nav col-md-4 justify-content-start">
+        <li class="nav-item" id="contato">
+          CONTATO
+          <p>Whatsapp</p>
+        </li>
+        <li class="nav-item">
+          LOCALIZAÇÃO
+          <p>
+            R. Monsenhor Jerônimo Rodrigues, n° 59 - Jardim Climax, São Paulo -
+            SP, 04177-440
+          </p>
+        </li>
+      </ul>
 
-            <li><a href="https://www.instagram.com/oficinadoluis/">
-                <img src="assets/logo.instagram.png" alt="Logo do Instagram: Parece uma lente de câmera - Há um círculo, dentro dele no centro há um quadrado, dentro há um ponto no canto superior direito e um círculo no centro">                
-            </a></li>
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <img
+          class="w-50"
+          src="assets/logo.oficina.png"
+          alt="Logo em forma arredondada com um carro no centro e acima dele escrito em destaque Ofina do Luis"
+        />
+      </a>
 
-            <li>  <a href="https://www.facebook.com/oficial.oficinadoluis">
-                <img src="assets/logo.facebook.png" alt="Logo do Facebook: Há um círculo e dentro dele a letra f">
-            </a></li>            
-          
-        </div>
+      <ul class="nav col-md-4 justify-content-end text-center">
+        <li class="nav-item">
+          HORÁRIOS
+          <p>De seg. a sex. das 08h00 às 17h30</p>
+        </li>
+        <li class="nav-item d-flex">
+          <a href="https://www.instagram.com/oficinadoluis/"
+            ><img
+              class="w-25"
+              src="assets/logo.instagram.png"
+              alt="Logo do Instagram: Parece uma lente de câmera - Há um círculo, dentro dele no centro há um quadrado, dentro há um ponto no canto superior direito e um círculo no centro"
+          /></a>
+        </li>
+        <li class="nav-item d-flex">
+          <a href="https://www.facebook.com/oficial.oficinadoluis"
+            ><img
+              class="w-25"
+              src="assets/logo.facebook.png"
+              alt="Logo do Facebook: Há um círculo e dentro dele a letra f"
+          /></a>
+        </li>
+      </ul>
 
-        <div><p>© 2023 Oficina do Luis - Desenvolvido por Nayara Ferreira</p></div>
-
+      <div>
+        <p class="text-white">
+          © 2023 Oficina do Luis - Desenvolvido por Nayara Ferreira
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
