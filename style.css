@@ -16,6 +16,10 @@ nav {
   z-index: 1;
 }
 
+.nav-item {
+  list-style: none;
+}
+
 footer {
   background: linear-gradient(#fff, #010127);
 }
