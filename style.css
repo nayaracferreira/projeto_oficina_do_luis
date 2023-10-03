@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-  background: linear-gradient(#010127, #fff);
+  background: linear-gradient(#fff, #010127);
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
@@ -20,6 +20,17 @@ nav {
   list-style: none;
 }
 
+main {
+  background: #010127;
+}
+
 footer {
-  background: linear-gradient(#fff, #010127);
+  background: linear-gradient(#010127, #fff);
+}
+
+/* ===================Media Querys=================== */
+@media only screen and (max-width: 680px) {
+  header {
+    width: 100%;
+  }
 }
