@@ -22,10 +22,22 @@ nav {
 
 main {
   background: #010127;
+  border: #010127;
+  margin-top: -1%;
 }
 
 footer {
   background: linear-gradient(#010127, #fff);
+  display: flex;
+  width: 100%;
+}
+
+.footerItems {
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  width: 33, 33;
+  flex-wrap: wrap;
 }
 
 /* ===================Media Querys=================== */
