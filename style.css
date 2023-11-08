@@ -26,6 +26,10 @@ main {
   margin-top: -1%;
 }
 
+main image {
+  width: 60%;
+}
+
 footer {
   background: linear-gradient(#010127, #fff);
   display: flex;
@@ -33,11 +37,12 @@ footer {
 }
 
 .footerItems {
-  justify-content: center;
+  justify-content: space-around;
+  color: black;
   align-items: center;
-  margin-top: 7%;
-  width: 33, 33;
-  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 5%;
+  width: 33.33%;
 }
 
 /* ===================Media Querys=================== */
